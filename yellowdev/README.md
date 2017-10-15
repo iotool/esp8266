@@ -1,5 +1,8 @@
 # Yellow Dev
 
+* 1.39 mA deep sleep with blue power led (470 Ohm resistor) = 72 days @ 2.400 mAh
+* 0.26 mA deep sleep without blue power led (cut pcb close to the jumper) = 384 days @ 2.400 mAh
+
 ## SOFTAP
 
 * Hotspot: AI-THINKER_XXXXXX
@@ -46,7 +49,7 @@ esptool.py --chip esp8266 --port COM4 --baud 115200 read_flash 0x00000 0x400000 
 * REST
 * ADC
 * CH_PD = 100 Ohm - VCC
-* GPIO 16 = LED 6
+* GPIO 16 = (LED 6) = WAKEUP = WIRE TO REST
 * GPIO 14 = LED 5
 * GPIO 12 = RGB green
 * GPIO 13 = RGB blue
