@@ -20,10 +20,10 @@ http://192.168.4.1/client?command=info
 
 ## ESPTOOL
 
-Connect via WittyCloud USB-Adapter
+Connect via WittyCloud USB-Adapter. DON'T CONNECT 5V TO VCC PIN!
 
 * GND - GND
-* VCC - VCC
+* VCC - wire to VCC-battery
 * TXD - TXD
 * RXD - RXD
 * RST - REST
