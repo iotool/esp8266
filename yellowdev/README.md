@@ -27,7 +27,8 @@ Connect via WittyCloud USB-Adapter. DON'T CONNECT 5V TO VCC PIN!
 * TXD - TXD
 * RXD - RXD
 * RST - REST
-* JUMPER = closed
+* GPIO 00 = GPIO 00 (V1)
+* JUMPER = closed (V2)
 
 esptool.py --chip esp8266 --port COM4 --baud 115200 read_flash 0x00000 0x400000 yellowdev-0.9.2.bin
 
