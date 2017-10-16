@@ -1,12 +1,12 @@
 
 #define LED_1 02
-#define LED_2 00
-#define LED_3 04
-#define LED_4 05
+#define LED_2 00 /* glow 0.23V */
+#define LED_3 04 /* glow */
+#define LED_4 05 /* glow */
 #define LED_5 14
 #define LED_6 16 /* wakeup */
 #define RGB_R 15
-#define RGB_G 12
+#define RGB_G 12 /* glow 2.13V */
 #define RGB_B 13
 
 #define LED_ON  LOW
@@ -43,6 +43,8 @@ void setup() {
   }
   Serial.println();
   Serial.println("DeepSleep 20 sec");
+  pinMode(LED_3,INPUT_PULLUP); // turn off
+  pinMode(LED_4,INPUT_PULLUP); // turn off
   delay(900);
   ESP.deepSleep(20e6);
   delay(100);
